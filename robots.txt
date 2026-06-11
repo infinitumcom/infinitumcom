@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://infinitumcom.com/sitemap.xml

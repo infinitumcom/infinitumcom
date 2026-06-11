@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" width="500" height="150">
+  <defs>
+    <linearGradient id="arc-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a3a6b"/>
+      <stop offset="50%" stop-color="#1476d4"/>
+      <stop offset="100%" stop-color="#38a8ff"/>
+    </linearGradient>
+    <linearGradient id="globe-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1476d4"/>
+      <stop offset="100%" stop-color="#38a8ff"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1476d4"/>
+      <stop offset="100%" stop-color="#5bc4ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sweeping arc from bottom-left through globe -->
+  <path d="M 10,95 Q 120,30 250,45 T 430,25" fill="none" stroke="url(#arc-grad)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Globe wireframe -->
+  <g transform="translate(370,32)" opacity="0.85">
+    <!-- Main circle -->
+    <ellipse cx="0" cy="0" rx="42" ry="42" fill="none" stroke="#1476d4" stroke-width="1.2" opacity="0.7"/>
+    <!-- Horizontal arc -->
+    <ellipse cx="0" cy="0" rx="42" ry="16" fill="none" stroke="#1476d4" stroke-width="1" opacity="0.5"/>
+    <!-- Vertical arc -->
+    <ellipse cx="0" cy="0" rx="20" ry="42" fill="none" stroke="#38a8ff" stroke-width="1" opacity="0.5"/>
+    <!-- Meridian -->
+    <ellipse cx="0" cy="0" rx="35" ry="42" fill="none" stroke="#1476d4" stroke-width="0.8" opacity="0.35" transform="rotate(15)"/>
+    <!-- Orbit ring -->
+    <ellipse cx="8" cy="-5" rx="55" ry="22" fill="none" stroke="#38a8ff" stroke-width="1.2" opacity="0.6" transform="rotate(-20)"/>
+    <!-- Node dots on orbit -->
+    <circle cx="-42" cy="12" r="5" fill="#1476d4"/>
+    <circle cx="-42" cy="12" r="3" fill="#38a8ff"/>
+    <circle cx="48" cy="-18" r="4" fill="#1476d4"/>
+    <circle cx="48" cy="-18" r="2.5" fill="#5bc4ff"/>
+  </g>
+
+  <!-- Network node dots on arc -->
+  <circle cx="250" cy="43" r="5" fill="#1476d4"/>
+  <circle cx="250" cy="43" r="3" fill="#38a8ff"/>
+  <circle cx="320" cy="36" r="4.5" fill="#1476d4"/>
+  <circle cx="320" cy="36" r="2.8" fill="#38a8ff"/>
+
+  <!-- Tower / antenna "i" -->
+  <g transform="translate(22,28)">
+    <!-- Tower body -->
+    <rect x="-3" y="18" width="6" height="62" rx="1" fill="#122a4d"/>
+    <!-- Tower base taper -->
+    <polygon points="-7,80 7,80 4,55 -4,55" fill="#122a4d"/>
+    <!-- Flame / signal drop -->
+    <path d="M 0,2 C 5,8 5,14 0,18 C -5,14 -5,8 0,2 Z" fill="url(#flame)"/>
+    <ellipse cx="0" cy="12" rx="2" ry="2.5" fill="#5bc4ff" opacity="0.8"/>
+  </g>
+
+  <!-- "infinitum" text -->
+  <text x="40" y="102" font-family="'Clash Display','Segoe UI',Arial,sans-serif" font-size="62" font-weight="700" letter-spacing="-1.5" fill="#122a4d">
+    <tspan dx="5">nfinitum</tspan>
+  </text>
+
+  <!-- "COMMUNICATIONS" subtitle -->
+  <text x="95" y="130" font-family="'Space Mono','Courier New',monospace" font-size="16" font-weight="400" letter-spacing="8" fill="#4a7090">COMMUNICATIONS</text>
+</svg>

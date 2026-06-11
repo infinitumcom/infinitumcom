@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinitum Communications | Wholesale DID &amp; SIP Trunking</title>
+<meta name="description" content="Infinitum Communications is a licensed CLEC offering wholesale DID numbers across all 50 US states, carrier-grade SIP trunking, and business VoIP. National carrier-grade infrastructure.">
+<link rel="canonical" href="https://infinitumcom.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Infinitum Communications | Wholesale DID &amp; SIP Trunking">
+<meta property="og:description" content="Licensed CLEC offering wholesale DID numbers across all 50 US states, carrier-grade SIP trunking, and business VoIP.">
+<meta property="og:url" content="https://infinitumcom.com/">
+<meta property="og:image" content="https://infinitumcom.com/images/og-cover.png">
+<meta property="og:site_name" content="Infinitum Communications">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Infinitum Communications | Wholesale DID &amp; SIP Trunking">
+<meta name="twitter:description" content="Licensed CLEC offering wholesale DID numbers across all 50 US states, carrier-grade SIP trunking, and business VoIP.">
+<meta name="twitter:image" content="https://infinitumcom.com/images/og-cover.png">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Infinitum Communications LLC",
+  "url": "https://infinitumcom.com",
+  "logo": "https://infinitumcom.com/images/logo.png",
+  "description": "Licensed CLEC offering wholesale DID numbers, carrier-grade SIP trunking, and business VoIP across all 50 US states.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Alhambra",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": "support@infinitumcom.com"
+  },
+  "sameAs": []
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="cur"></div>
+<div id="cur2"></div>
+<canvas id="bgCanvas" style="position:fixed;inset:0;z-index:0;opacity:.3;pointer-events:none;"></canvas>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png" alt="Infinitum Communications" width="190" height="80" loading="eager" fetchpriority="high">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#coverage">Coverage</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#wholesale">Wholesale</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-btn">Get Started</a>
+</nav>
+
+<!-- HERO -->
+<section style="position:relative;z-index:1;">
+  <div class="hero">
+    <div>
+      <img src="/images/logo.png" alt="Infinitum Communications" class="hero-logo" width="260" height="110" loading="eager" fetchpriority="high">
+      <div class="hero-eyebrow">Licensed CLEC · National DID Coverage · All 50 States</div>
+      <h1 class="hero-h1">
+        <span class="outline">NATIONAL</span>
+        <span class="filled">TELECOM</span>
+        <span class="gradient">CARRIER</span>
+      </h1>
+      <p class="hero-body">Wholesale DID numbers across all US area codes, carrier-grade SIP trunking, and business VoIP — powered by our CLEC licenses and direct national carrier interconnects. One provider. Nationwide reach. No middlemen.</p>
+      <div class="hero-actions">
+        <a href="#wholesale" class="btn-primary">View DID Rates</a>
+        <a href="#coverage" class="btn-ghost">See Coverage</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="signal-box">
+        <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
+        <canvas class="signal-canvas" id="waveCanvas"></canvas>
+        <div class="signal-stats">
+          <div class="signal-stat"><div class="signal-stat-num">50</div><div class="signal-stat-label">States Covered</div></div>
+          <div class="signal-stat"><div class="signal-stat-num">800+</div><div class="signal-stat-label">Area Codes</div></div>
+          <div class="signal-stat"><div class="signal-stat-num">99.9%</div><div class="signal-stat-label">Uptime SLA</div></div>
+          <div class="signal-stat"><div class="signal-stat-num">24/7</div><div class="signal-stat-label">NOC Support</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <div class="ticker-item">All 50 US States</div><div class="ticker-item">800+ Area Codes</div><div class="ticker-item">702 · 725 Las Vegas</div><div class="ticker-item">Wholesale SIP Trunking</div><div class="ticker-item">Business VoIP</div><div class="ticker-item">Number Porting</div><div class="ticker-item">1000-Block Pooling</div><div class="ticker-item">E911 Compliant</div><div class="ticker-item">STIR/SHAKEN Certified</div>
+    <div class="ticker-item">All 50 US States</div><div class="ticker-item">800+ Area Codes</div><div class="ticker-item">702 · 725 Las Vegas</div><div class="ticker-item">Wholesale SIP Trunking</div><div class="ticker-item">Business VoIP</div><div class="ticker-item">Number Porting</div><div class="ticker-item">1000-Block Pooling</div><div class="ticker-item">E911 Compliant</div><div class="ticker-item">STIR/SHAKEN Certified</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="s-d0">
+  <div class="pad">
+    <div class="label">What We Offer</div>
+    <h2 class="stitle">Full-Stack <span>Telecom</span> Services</h2>
+    <p class="sdesc">Our CLEC licenses combined with direct national carrier interconnects allow us to deliver both local Nevada numbers and full national DID coverage — all under one provider, one invoice, and one support team.</p>
+    <div class="services-grid rv">
+      <div class="svc"><div class="svc-num">// 01</div><div class="svc-icon-wrap">&#x1F4DE;</div><div class="svc-title">National DID Numbers</div><p class="svc-desc">Access DID numbers in all 50 US states and 800+ area codes. Nevada 702/725 numbers sourced directly from our CLEC license. All other US area codes delivered via our wholesale carrier interconnects at carrier cost.</p><a href="#wholesale" class="svc-link">View rate card →</a></div>
+      <div class="svc"><div class="svc-num">// 02</div><div class="svc-icon-wrap">&#x1F517;</div><div class="svc-title">SIP Trunking</div><p class="svc-desc">Carrier-grade elastic SIP trunks with direct PSTN access. Route calls over our carrier-grade network infrastructure. $0.009/min outbound — well below industry standard $0.013/min. Scale channels instantly, no contracts.</p><a href="#pricing" class="svc-link">See pricing →</a></div>
+      <div class="svc"><div class="svc-num">// 03</div><div class="svc-icon-wrap">&#x1F4F1;</div><div class="svc-title">Business VoIP</div><p class="svc-desc">Cloud phone system from $15/user/month — below RingCentral ($20) and Nextiva ($18). Unlimited US &amp; Canada calling, mobile apps, IVR, call recording, and analytics. Numbers available in any US area code through our national carrier network.</p><a href="#pricing" class="svc-link">View plans →</a></div>
+      <div class="svc"><div class="svc-num">// 04</div><div class="svc-icon-wrap">&#x1F504;</div><div class="svc-title">Number Porting (LNP)</div><p class="svc-desc">Port existing numbers from any US carrier to our network at no charge for bulk transfers over 10 numbers. We handle full LOA documentation, NPAC coordination, and port tracking. Average port completion: 3–5 business days for local numbers.</p><a href="#contact" class="svc-link">Start porting →</a></div>
+      <div class="svc"><div class="svc-num">// 05</div><div class="svc-icon-wrap">&#x1F310;</div><div class="svc-title">White-Label Reseller</div><p class="svc-desc">Resell our full platform — DID numbers, SIP trunking, and VoIP — under your own brand and domain. Custom pricing portal, branded invoicing, and dedicated reseller support. No minimum monthly commitment to join the partner program.</p><a href="#contact" class="svc-link">Partner with us →</a></div>
+      <div class="svc"><div class="svc-num">// 06</div><div class="svc-icon-wrap">&#x1F6E1;&#xFE0F;</div><div class="svc-title">Compliance &amp; E911</div><p class="svc-desc">All services are E911-registered, STIR/SHAKEN certified (A-level attestation), CPNI-compliant, and FCC 499 filed. Our CLEC licenses and carrier interconnects meet all federal and state regulatory requirements from day one.</p><a href="#contact" class="svc-link">Learn more →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- COVERAGE -->
+<section id="coverage" class="s-d1">
+  <div class="pad">
+    <div class="label">National Coverage</div>
+    <h2 class="stitle">All 50 States,<br><span>800+ Area Codes</span></h2>
+    <p class="sdesc">Our CLEC licenses are the foundation. Direct wholesale interconnects with our national carrier partners give us access to virtually every DID number in the United States. You get a single provider relationship, regardless of which area codes you need.</p>
+
+    <div class="coverage-hero rv">
+      <div>
+        <div class="coverage-stats">
+          <div class="cstat"><div class="cstat-num">50</div><div class="cstat-label">US States</div></div>
+          <div class="cstat"><div class="cstat-num">800+</div><div class="cstat-label">Area Codes</div></div>
+          <div class="cstat"><div class="cstat-num">3</div><div class="cstat-label">Tier-1 Interconnects</div></div>
+          <div class="cstat"><div class="cstat-num">99.9%</div><div class="cstat-label">Uptime SLA</div></div>
+        </div>
+
+        <div class="carrier-grid" style="margin-top:28px;">
+          <div class="carrier-row">
+            <div class="carrier-badge">Partner A</div>
+            <div class="carrier-desc">Global carrier &amp; CPaaS provider. Direct interconnect provides US-wide DID origination with high number inventory depth across all major metros.</div>
+            <div class="carrier-scope">US National</div>
+          </div>
+          <div class="carrier-row">
+            <div class="carrier-badge">Partner B</div>
+            <div class="carrier-desc">US national carrier interconnect. Provides robust national DID inventory, porting infrastructure, and redundant voice routing.</div>
+            <div class="carrier-scope">US + Canada</div>
+          </div>
+          <div class="carrier-row">
+            <div class="carrier-badge">Partner C</div>
+            <div class="carrier-desc">Supplemental national carrier interconnect for geographic redundancy and niche area code coverage across all 50 states.</div>
+            <div class="carrier-scope">US + 100 Countries</div>
+          </div>
+          <div class="carrier-row">
+            <div class="carrier-badge">CLEC Direct</div>
+            <div class="carrier-desc">Our direct CLEC licenses provide local DIDs, 1,000-block NANPA pool allocations, and PSTN interconnect rights across multiple states.</div>
+            <div class="carrier-scope">702 · 725 Direct</div>
+          </div>
+        </div>
+
+        <div class="coverage-badges" style="margin-top:24px;">
+          <span class="cbadge on">702 Las Vegas</span>
+          <span class="cbadge on">725 Las Vegas</span>
+          <span class="cbadge on">212 New York</span>
+          <span class="cbadge on">310 Los Angeles</span>
+          <span class="cbadge on">312 Chicago</span>
+          <span class="cbadge on">713 Houston</span>
+          <span class="cbadge on">602 Phoenix</span>
+          <span class="cbadge on">215 Philadelphia</span>
+          <span class="cbadge on">210 San Antonio</span>
+          <span class="cbadge on">619 San Diego</span>
+          <span class="cbadge">800/888 Toll-Free</span>
+          <span class="cbadge">All 50 States →</span>
+        </div>
+      </div>
+
+      <div class="map-box rv2">
+        <svg viewBox="0 0 960 600" fill="none" style="width:100%;height:100%;padding:36px 24px 16px;">
+          <rect x="70" y="70" width="78" height="118" fill="rgba(20,118,212,.06)" stroke="rgba(56,168,255,.2)" stroke-width=".8"/>
+          <rect x="148" y="70" width="80" height="118" fill="rgba(20,118,212,.06)" stroke="rgba(56,168,255,.18)" stroke-width=".8"/>
+          <polygon points="192,70 268,70 268,255 200,268 177,234 163,172 168,112" fill="rgba(20,118,212,.25)" stroke="var(--sky2)" stroke-width="1.8"/>
+          <rect x="268" y="70" width="98" height="198" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.15)" stroke-width=".8"/>
+          <rect x="366" y="70" width="98" height="198" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.15)" stroke-width=".8"/>
+          <rect x="464" y="55" width="118" height="213" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.15)" stroke-width=".8"/>
+          <rect x="582" y="55" width="118" height="213" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.15)" stroke-width=".8"/>
+          <rect x="700" y="55" width="118" height="213" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.15)" stroke-width=".8"/>
+          <rect x="818" y="55" width="80" height="380" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.15)" stroke-width=".8"/>
+          <rect x="70" y="188" width="78" height="118" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.13)" stroke-width=".8"/>
+          <rect x="70" y="306" width="78" height="98" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.13)" stroke-width=".8"/>
+          <rect x="148" y="268" width="80" height="98" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.13)" stroke-width=".8"/>
+          <rect x="228" y="268" width="98" height="98" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.13)" stroke-width=".8"/>
+          <rect x="366" y="268" width="98" height="118" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.13)" stroke-width=".8"/>
+          <rect x="464" y="268" width="118" height="175" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.13)" stroke-width=".8"/>
+          <rect x="582" y="268" width="118" height="175" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.13)" stroke-width=".8"/>
+          <rect x="700" y="268" width="118" height="175" fill="rgba(56,168,255,.05)" stroke="rgba(56,168,255,.13)" stroke-width=".8"/>
+          <circle cx="220" cy="202" r="7" fill="var(--sky2)"/>
+          <circle cx="220" cy="202" r="14" fill="rgba(56,168,255,.22)"/>
+          <circle cx="220" cy="202" r="22" fill="rgba(56,168,255,.07)"/>
+          <text x="238" y="206" fill="var(--sky2)" font-size="10" font-family="monospace" font-weight="700">Las Vegas</text>
+          <text x="238" y="220" fill="rgba(56,168,255,.55)" font-size="8" font-family="monospace">702 · 725 · CLEC Licensed</text>
+          <circle cx="858" cy="130" r="4" fill="rgba(56,168,255,.8)"/>
+          <text x="828" y="120" fill="rgba(56,168,255,.6)" font-size="8" font-family="monospace">212 NYC</text>
+          <circle cx="110" cy="290" r="4" fill="rgba(56,168,255,.7)"/>
+          <text x="78" y="310" fill="rgba(56,168,255,.55)" font-size="8" font-family="monospace">310 LA</text>
+          <circle cx="640" cy="150" r="4" fill="rgba(56,168,255,.7)"/>
+          <text x="648" y="148" fill="rgba(56,168,255,.55)" font-size="8" font-family="monospace">312</text>
+          <circle cx="520" cy="380" r="4" fill="rgba(56,168,255,.7)"/>
+          <text x="528" y="378" fill="rgba(56,168,255,.55)" font-size="8" font-family="monospace">713</text>
+          <line x1="220" y1="202" x2="858" y2="130" stroke="rgba(56,168,255,.15)" stroke-width="1" stroke-dasharray="5,4"/>
+          <line x1="220" y1="202" x2="640" y2="150" stroke="rgba(56,168,255,.12)" stroke-width="1" stroke-dasharray="5,4"/>
+          <line x1="220" y1="202" x2="520" y2="380" stroke="rgba(56,168,255,.1)" stroke-width="1" stroke-dasharray="5,4"/>
+          <line x1="220" y1="202" x2="110" y2="290" stroke="rgba(56,168,255,.1)" stroke-width="1" stroke-dasharray="5,4"/>
+          <text x="480" y="520" fill="rgba(56,168,255,.3)" font-size="9" font-family="monospace" text-anchor="middle">ALL 50 STATES · NATIONAL COVERAGE</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHOLESALE DID -->
+<section id="wholesale" class="s-d2">
+  <div class="pad">
+    <div class="did-layout rv">
+      <div>
+        <div class="label">Wholesale DID</div>
+        <div class="did-intro-title">National DID Numbers<br>at <span>Carrier</span> Cost</div>
+        <p class="did-intro-body">Our CLEC licenses combined with wholesale national carrier agreements give us access to virtually every US area code at true carrier wholesale rates — not retail aggregator markups. Single provider, single invoice, national reach.</p>
+        <div class="did-bullets">
+          <div class="did-bullet">Core markets: sourced directly from our CLEC licenses at lowest possible cost</div>
+          <div class="did-bullet">All other US area codes via our national carrier network</div>
+          <div class="did-bullet">Wholesale pricing activates at just 10 DIDs — no large upfront commitment</div>
+          <div class="did-bullet">1,000-block NANPA pool allocations for licensed CLECs and large operators</div>
+          <div class="did-bullet">REST API with instant provisioning — zero manual tickets or delays</div>
+          <div class="did-bullet">Inbound-only or two-way (inbound + outbound) per DID</div>
+          <div class="did-bullet">Number porting in: free for bulk LNP transfers of 10+ numbers</div>
+        </div>
+        <a href="#contact" class="btn-primary" style="margin-top:36px;display:inline-block;">Request Wholesale Access</a>
+      </div>
+      <div class="did-table">
+        <div class="did-thead"><span>Region / Number Type</span><span>Direction</span><span>$/mo</span><span>Status</span></div>
+        <div class="did-tr"><span class="r">702 Alhambra, CA</span><span>Inbound only</span><span class="p">$0.85</span><span class="a"><span class="dot-live"></span>Live</span></div>
+        <div class="did-tr"><span class="r">702 Alhambra, CA</span><span>Two-way</span><span class="p">$1.10</span><span class="a"><span class="dot-live"></span>Live</span></div>
+        <div class="did-tr"><span class="r">725 Alhambra, CA</span><span>Two-way</span><span class="p">$1.10</span><span class="a"><span class="dot-live"></span>Live</span></div>
+        <div class="did-tr"><span class="r">US National (any NPA)</span><span>Inbound only</span><span class="p">$1.15</span><span class="a"><span class="dot-live"></span>Live</span></div>
+        <div class="did-tr"><span class="r">US National (any NPA)</span><span>Two-way</span><span class="p">$1.45</span><span class="a"><span class="dot-live"></span>Live</span></div>
+        <div class="did-tr"><span class="r">800 / 888 / 877 / 866</span><span>Toll-Free Inbound</span><span class="p">$1.75</span><span class="a"><span class="dot-live"></span>Live</span></div>
+        <div class="did-tr"><span class="r">702 — 1K Block</span><span>NANPA Pool Alloc.</span><span class="p">$0.65</span><span class="a"><span class="dot-inq"></span>Inquiry</span></div>
+        <div class="did-tr"><span class="r">Canada (major cities)</span><span>Two-way</span><span class="p">$1.65</span><span class="a"><span class="dot-live"></span>Live</span></div>
+        <div class="did-foot">
+          // min. 10 DIDs for wholesale rates &nbsp;·&nbsp; usage: $0.006/min inbound · $0.009/min outbound<br>
+          // E911 registration: $1.00/line/mo &nbsp;·&nbsp; STIR/SHAKEN A-attestation included &nbsp;·&nbsp; all prices in USD
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="s-d0">
+  <div class="pad">
+    <div class="pricing-header">
+      <div><div class="label">Pricing</div><h2 class="stitle">Competitive Plans,<br><span>No Hidden Fees</span></h2></div>
+      <div class="plan-toggle">
+        <button class="ptb on" onclick="setPlan('retail',this)">Business VoIP</button>
+        <button class="ptb" onclick="setPlan('wholesale',this)">Wholesale / Reseller</button>
+      </div>
+    </div>
+    <div class="plans rv" id="planGrid"></div>
+    <div class="addon rv">
+      <span style="font-size:20px;flex-shrink:0;">&#x1F517;</span>
+      <div style="flex:1;">
+        <div class="addon-title">SIP Trunking — Connect Your Existing PBX</div>
+        <div class="addon-desc">$3.95/channel/month (elastic, scale instantly) &nbsp;·&nbsp; $0.009/min outbound &nbsp;·&nbsp; $0.006/min inbound &nbsp;·&nbsp; No setup fee &nbsp;·&nbsp; FreePBX, 3CX, Asterisk, Cisco, Avaya compatible &nbsp;·&nbsp; All US area codes available for inbound DID</div>
+      </div>
+      <a href="#contact" class="btn-ghost" style="flex-shrink:0;white-space:nowrap;">Get SIP Trunks</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="s-d1">
+  <div class="pad">
+    <div class="label">Process</div>
+    <h2 class="stitle">Up &amp; Running in <span>24 Hours</span></h2>
+    <div class="how-steps rv">
+      <div class="how-step"><div class="how-num">01</div><div class="how-title">Apply Online</div><p class="how-desc">Complete our 5-minute application with your business details and intended use case. Wholesale and reseller accounts receive same-day approval for qualified operators.</p></div>
+      <div class="how-step"><div class="how-num">02</div><div class="how-title">Select Numbers</div><p class="how-desc">Browse live DID inventory across all 50 states via our portal or REST API. Any US area code available. Numbers provision instantly — no waiting periods or manual review.</p></div>
+      <div class="how-step"><div class="how-num">03</div><div class="how-title">Configure &amp; Test</div><p class="how-desc">Point SIP credentials to our endpoints or configure via web portal. Free technical onboarding call included. Test environment available before going live.</p></div>
+      <div class="how-step"><div class="how-num">04</div><div class="how-title">Scale Live</div><p class="how-desc">Go live and add channels, DIDs, and users on demand from your dashboard. Monthly billing, no minimum terms. Cancel anytime — no termination fees.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" class="s-d2">
+  <div class="pad">
+    <div class="label">Why Infinitum</div>
+    <h2 class="stitle">What <span>Sets Us Apart</span></h2>
+    <div class="why-grid rv">
+      <div class="why-card"><div class="why-icon-box">&#x1F3DB;&#xFE0F;</div><div><div class="why-card-title">Licensed CLEC + National Carrier Access</div><p class="why-card-desc">Our CLEC licenses are the legal foundation that allows us to interconnect directly with national carriers as a carrier peer — not a retail customer. That means we get carrier-to-carrier wholesale rates, which we pass through to you. Most "wholesale" VoIP providers are themselves retail resellers with no carrier standing.</p></div></div>
+      <div class="why-card"><div class="why-icon-box">&#x1F4B0;</div><div><div class="why-card-title">Pricing That Beats the Market</div><p class="why-card-desc">Business VoIP from $15/user vs. RingCentral at $20+. SIP outbound at $0.009/min vs. industry standard $0.013/min. Wholesale DIDs from $0.85/mo vs. retail aggregators at $1.50–$2.00. No "regulatory recovery" or "compliance" surcharges that inflate competitors' bills by 20–30%. What you see is what you pay.</p></div></div>
+      <div class="why-card"><div class="why-icon-box">&#x1F310;</div><div><div class="why-card-title">True National Coverage, One Provider</div><p class="why-card-desc">Local numbers from our direct CLEC licenses. Every other US area code through our national carrier network. One contract, one invoice, one support team — regardless of whether you need numbers in Nevada, New York, or anywhere in between.</p></div></div>
+      <div class="why-card"><div class="why-icon-box">&#x1F512;</div><div><div class="why-card-title">Full Compliance, Zero Setup Required</div><p class="why-card-desc">E911 registered, STIR/SHAKEN A-level certified, CPNI compliant, FCC 499 filed, Nevada PUC regulated. All compliance infrastructure is built in — no third-party compliance consultants needed. Your service is compliant from the moment it goes live.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REGULATORY CREDENTIALS -->
+<section id="regulatory" class="reg-section">
+  <div class="pad">
+    <div class="label">Regulatory Credentials</div>
+    <h2 class="stitle">Licensed <span>Carrier</span></h2>
+    <p class="sdesc">Infinitum Communications LLC is a licensed Competitive Local Exchange Carrier (CLEC) with full federal and state regulatory standing.</p>
+    <div class="reg-grid rv">
+      <div class="reg-card">
+        <div class="reg-card-label">FCC FRN</div>
+        <div class="reg-card-value">0038141175</div>
+        <div class="reg-card-note">Federal Communications Commission</div>
+      </div>
+      <div class="reg-card">
+        <div class="reg-card-label">NECA Company Code</div>
+        <div class="reg-card-value">218M</div>
+        <div class="reg-card-note">National Exchange Carrier Association</div>
+      </div>
+      <div class="reg-card">
+        <div class="reg-card-label">State Authority</div>
+        <div class="reg-card-value">Nevada PUC CPC</div>
+        <div class="reg-card-note">Docket 26-03019 · Approved May 2026</div>
+      </div>
+      <div class="reg-card">
+        <div class="reg-card-label">Entity</div>
+        <div class="reg-card-value">Infinitum Communications LLC</div>
+        <div class="reg-card-note">Nevada</div>
+      </div>
+    </div>
+    <div style="margin-top:24px;text-align:center;">
+      <a href="/regulatory/" class="btn-ghost" style="font-size:13px;padding:10px 24px;">View Full Regulatory Details →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="pad">
+    <div class="contact-layout">
+      <div class="rv">
+        <div class="label">Contact</div>
+        <img src="/images/logo.png" alt="Infinitum Communications" class="contact-logo" width="220" height="93" loading="lazy">
+        <div class="contact-big">Let's <span>Connect</span></div>
+        <p class="contact-sub">Ready to discuss wholesale DID numbers across all US area codes, SIP trunking, or a business VoIP deployment? We respond within 4 business hours. Wholesale accounts receive same-day review.</p>
+        <div class="contact-items">
+          <div class="contact-item"><div class="contact-icon">&#x2709;</div><div><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:support@infinitumcom.com">support@infinitumcom.com</a></div></div></div>
+          <div class="contact-item"><div class="contact-icon">&#x1F4CD;</div><div><div class="ci-label">Headquarters</div><div class="ci-val">Alhambra, CA</div></div></div>
+          <div class="contact-item"><div class="contact-icon">&#x1F550;</div><div><div class="ci-label">Business Hours</div><div class="ci-val">Mon–Fri 8am–6pm PT &nbsp;·&nbsp; Emergency NOC 24/7</div></div></div>
+          <div class="contact-item"><div class="contact-icon">&#x26A1;</div><div><div class="ci-label">Response Time</div><div class="ci-val">Within 4 business hours &nbsp;·&nbsp; Wholesale accounts same-day</div></div></div>
+        </div>
+      </div>
+      <div class="cform rv">
+        <div class="form-row2">
+          <div class="fgroup"><label class="flabel">First Name *</label><input type="text" class="finput" placeholder="John"></div>
+          <div class="fgroup"><label class="flabel">Last Name *</label><input type="text" class="finput" placeholder="Smith"></div>
+        </div>
+        <div class="fgroup"><label class="flabel">Business Email *</label><input type="email" class="finput" placeholder="john@company.com"></div>
+        <div class="fgroup"><label class="flabel">Company Name *</label><input type="text" class="finput" placeholder="Acme Telecom LLC"></div>
+        <div class="form-row2">
+          <div class="fgroup"><label class="flabel">Phone Number</label><input type="tel" class="finput" placeholder="+1 (702) 555-0000"></div>
+          <div class="fgroup"><label class="flabel">Company Website</label><input type="text" class="finput" placeholder="www.yourcompany.com"></div>
+        </div>
+        <div class="fgroup">
+          <label class="flabel">I'm Interested In *</label>
+          <select class="fselect">
+            <option value="">Select a service...</option>
+            <option>Wholesale DID — Nevada 702/725 (direct CLEC)</option>
+            <option>Wholesale DID — National (any US area code)</option>
+            <option>Wholesale DID — Toll-Free 800/888/877</option>
+            <option>1,000-Block NANPA Pool Allocation</option>
+            <option>SIP Trunking (connect my existing PBX)</option>
+            <option>Business VoIP — Retail Plan</option>
+            <option>White-Label Reseller Program</option>
+            <option>Number Porting (LNP transfer)</option>
+            <option>Enterprise / Custom Infrastructure</option>
+            <option>CLEC-to-CLEC Carrier Exchange</option>
+          </select>
+        </div>
+        <div class="fgroup">
+          <label class="flabel">Estimated Monthly Volume</label>
+          <select class="fselect">
+            <option value="">Select volume...</option>
+            <option>1–10 DIDs / 1–5 users</option>
+            <option>10–50 DIDs / 5–25 users</option>
+            <option>50–250 DIDs / 25–100 users</option>
+            <option>250–1,000 DIDs / 100–500 users</option>
+            <option>1,000–10,000 DIDs / Enterprise</option>
+            <option>10,000+ DIDs / Carrier scale</option>
+          </select>
+        </div>
+        <div class="fgroup"><label class="flabel">Which Area Codes Do You Need?</label><input type="text" class="finput" placeholder="e.g. 702, 212, 310, 312 — or 'all US'"></div>
+        <div class="fgroup"><label class="flabel">Additional Details</label><textarea class="ftextarea" placeholder="Tell us about your current setup, what you're looking to replace, SIP endpoint type, codec preferences, porting details, or any other requirements."></textarea></div>
+        <div style="font-size:15px;color:var(--muted2);font-weight:300;line-height:1.8;">By submitting this form you agree to our <a href="/terms/" style="color:var(--sky2);">Terms of Service</a> and <a href="/privacy/" style="color:var(--sky2);">Privacy Policy</a>. We will never sell your information.</div>
+        <button class="fsubmit" onclick="handleSubmit(this)">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="/images/logo.png" class="footer-bg-logo" alt="" width="900" height="381" loading="lazy">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">
+        <img src="/images/logo.png" alt="Infinitum Communications" width="200" height="85" loading="lazy">
+      </a>
+      <p>Infinitum Communications LLC is a licensed Competitive Local Exchange Carrier (CLEC) providing wholesale DID numbers across all 50 US states, carrier-grade SIP trunking, and business VoIP services.</p>
+      <div class="footer-frn">FCC FRN 0038141175 · NECA 218M</div>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="flinks">
+        <li><a href="#wholesale">Wholesale DID Numbers</a></li>
+        <li><a href="#pricing">SIP Trunking</a></li>
+        <li><a href="#pricing">Business VoIP</a></li>
+        <li><a href="#services">Number Porting (LNP)</a></li>
+        <li><a href="#services">White-Label Reseller</a></li>
+        <li><a href="#coverage">National Coverage</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="flinks">
+        <li><a href="#why">About Us</a></li>
+        <li><a href="#coverage">Carrier Network</a></li>
+        <li><a href="/regulatory/">Regulatory Credentials</a></li>
+        <li><a href="#contact">Partner Program</a></li>
+        <li><a href="mailto:support@infinitumcom.com">support@infinitumcom.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal &amp; Compliance</div>
+      <ul class="flinks">
+        <li><a href="/terms/">Terms of Service</a></li>
+        <li><a href="/privacy/">Privacy Policy</a></li>
+        <li><a href="/aup/">Acceptable Use Policy</a></li>
+        <li><a href="/e911/">E911 Disclosure</a></li>
+        <li><a href="/law-enforcement/">Law Enforcement / CALEA</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">
+      &copy; 2026 Infinitum Communications LLC · Alhambra, California · All rights reserved<br>
+      Licensed Competitive Local Exchange Carrier (CLEC) · FCC FRN 0038141175 · STIR/SHAKEN Certified · E911 Compliant
+    </div>
+    <div class="footer-badges">
+      <span class="fbadge">E911</span>
+      <span class="fbadge">STIR/SHAKEN</span>
+      <span class="fbadge">FCC 499</span>
+      <span class="fbadge">CLEC Licensed</span>
+      <span class="fbadge">CPNI</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* cursor */
+const C=document.getElementById('cur'),R=document.getElementById('cur2');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;C.style.left=mx+'px';C.style.top=my+'px';});
+(function tick(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;R.style.left=rx+'px';R.style.top=ry+'px';requestAnimationFrame(tick);})();
+document.querySelectorAll('a,button,.svc,.plan,.why-card,.carrier-row').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{C.style.width='18px';C.style.height='18px';R.style.width='48px';R.style.height='48px';});
+  el.addEventListener('mouseleave',()=>{C.style.width='8px';C.style.height='8px';R.style.width='32px';R.style.height='32px';});
+});
+
+/* bg particles */
+const bg=document.getElementById('bgCanvas'),bx=bg.getContext('2d');
+function rsz(){bg.width=innerWidth;bg.height=innerHeight;}rsz();window.addEventListener('resize',rsz);
+const pts=Array.from({length:50},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,r:Math.random()*1.2+.4}));
+(function ab(){bx.clearRect(0,0,bg.width,bg.height);pts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>bg.width)p.vx*=-1;if(p.y<0||p.y>bg.height)p.vy*=-1;bx.beginPath();bx.arc(p.x,p.y,p.r,0,Math.PI*2);bx.fillStyle='rgba(56,168,255,.7)';bx.fill();});pts.forEach((a,i)=>pts.forEach((b,j)=>{if(j<=i)return;const d=Math.hypot(a.x-b.x,a.y-b.y);if(d<130){bx.beginPath();bx.moveTo(a.x,a.y);bx.lineTo(b.x,b.y);bx.strokeStyle=`rgba(20,118,212,${.2*(1-d/130)})`;bx.lineWidth=.6;bx.stroke();}}));requestAnimationFrame(ab);})();
+
+/* waveform */
+const wc=document.getElementById('waveCanvas'),wx=wc.getContext('2d');let wt=0;
+function rwv(){wc.width=wc.parentElement.offsetWidth;wc.height=wc.parentElement.offsetHeight;}rwv();window.addEventListener('resize',rwv);
+(function dw(){wx.clearRect(0,0,wc.width,wc.height);const h=wc.height,w=wc.width,cy=h*.4;
+[{amp:26,freq:.012,off:0,col:'rgba(20,118,212,.6)',lw:1.5},{amp:14,freq:.02,off:2.1,col:'rgba(56,168,255,.38)',lw:1},{amp:36,freq:.007,off:4.5,col:'rgba(20,118,212,.18)',lw:.8}].forEach(w2=>{wx.beginPath();for(let x=0;x<=w;x+=2){const y=cy+Math.sin(x*w2.freq+wt+w2.off)*w2.amp+Math.sin(x*.025+wt*.5)*7;x===0?wx.moveTo(x,y):wx.lineTo(x,y);}wx.strokeStyle=w2.col;wx.lineWidth=w2.lw;wx.stroke();});
+const sx=(wt*20)%w;const g=wx.createLinearGradient(sx-60,0,sx+60,0);g.addColorStop(0,'transparent');g.addColorStop(.5,'rgba(56,168,255,.2)');g.addColorStop(1,'transparent');wx.fillStyle=g;wx.fillRect(sx-60,0,120,h*.7);wt+=.018;requestAnimationFrame(dw);})();
+
+/* scroll reveal */
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in');}),{threshold:.08});
+document.querySelectorAll('.rv,.rv2').forEach(r=>obs.observe(r));
+
+/* pricing data */
+const retail=[
+  {tier:'// Starter',name:'Business Essentials',
+   desc:'For small businesses replacing a legacy landline or setting up a first cloud phone system.',
+   price:'15',per:'/user/mo',note:'billed monthly \u00b7 no annual contract required',
+   compare:'vs. RingCentral Core $20 \u00b7 Nextiva Core $18',
+   feats:['1 local DID in any US area code','Unlimited calling \u2014 US & Canada','Mobile & desktop softphone apps','Auto-attendant (IVR) & call queues','Voicemail-to-email transcription','E911 registered \u00b7 STIR/SHAKEN included','Number porting in \u2014 free'],
+   hot:false,cta:'Start Free Trial'},
+  {tier:'// Professional',name:'Business Pro',
+   desc:'The complete cloud phone system for growing teams that need advanced routing and analytics.',
+   price:'25',per:'/user/mo',note:'billed monthly \u00b7 volume discounts at 10+ users',
+   compare:'vs. RingCentral Advanced $25 \u00b7 Nextiva Pro $26',
+   feats:['3 local DIDs in any US area codes','Unlimited US, Canada & Mexico calling','Mobile, desktop & browser apps','Advanced IVR, ring groups & call flow builder','Call recording & real-time analytics','SMS & MMS business messaging','CRM integrations (Salesforce, HubSpot, Zoho)','Number porting in \u2014 free for 10+ numbers','API access for custom integrations'],
+   hot:true,tag:'Most Popular',cta:'Start Free Trial'},
+  {tier:'// Enterprise',name:'Enterprise UCaaS',
+   desc:'Full unified communications for call centers, multi-site businesses, and enterprise deployments.',
+   price:null,note:'custom quote \u00b7 volume pricing \u00b7 SLA options',
+   compare:'Contact us \u2014 we beat RingCentral Ultra $35 & Nextiva Enterprise $38',
+   feats:['Unlimited DIDs in any US area codes','Dedicated SIP infrastructure & geo-redundancy','Contact center with ACD queue management','Supervisor monitoring, whisper & barge','Advanced analytics & custom reporting','API access & webhook integrations','White-label option available','Dedicated account manager \u00b7 4hr SLA support','Direct NOC escalation line'],
+   hot:false,cta:'Request Quote'}
+];
+const wholesale=[
+  {tier:'// Reseller',name:'DID Reseller',
+   desc:'For VoIP providers, MSPs, and IT companies reselling phone numbers to their clients nationwide.',
+   price:'0.85',per:'/DID/mo',note:'min. 10 DIDs \u00b7 NV 702/725 inbound-only \u00b7 no setup fee',
+   compare:'vs. retail aggregators charging $1.50\u2013$2.00/DID',
+   feats:['702 & 725 Nevada DIDs \u2014 direct CLEC','All US area codes \u2014 national carrier network','Canada major cities available','Instant REST API provisioning','Real-time inventory portal & reports','Inbound usage: $0.006/min','E911 registration: $1.00/line/mo','Monthly billing \u2014 no minimums after setup'],
+   hot:false,cta:'Apply for Account'},
+  {tier:'// Wholesale',name:'Carrier Wholesale',
+   desc:'Bulk SIP trunking and two-way DID packages for UCaaS platforms and telecom operators.',
+   price:'0.65',per:'/DID/mo',note:'min. 500 DIDs \u00b7 two-way \u00b7 volume pricing applies',
+   compare:'Industry average $1.15\u2013$2.00/mo \u00b7 our rate from $0.65',
+   feats:['All US area codes \u2014 national carrier network','702/725 Nevada direct from CLEC license','1,000-block NANPA pool allocations','Outbound: $0.009/min (50% below market average)','Inbound: $0.006/min','Dedicated SIP trunks & redundant routes','REST API + NPAC coordination','Number porting facilitation \u2014 bulk free','STIR/SHAKEN A-attestation included'],
+   hot:true,tag:'Best Value',cta:'Contact Wholesale Team'},
+  {tier:'// CLEC Partner',name:'CLEC Exchange',
+   desc:'Direct carrier-to-carrier interconnect for licensed CLECs, ILECs, and large operators.',
+   price:null,note:'carrier interconnect agreement required',
+   compare:'For licensed carriers only \u2014 NDA required',
+   feats:['Direct PSTN interconnect (SIP / SS7)','Custom rate decks & least-cost routing','NPAC access & number coordination','Full LNP / number porting facilitation','Dedicated NOC-to-NOC support line','Custom SLA \u2014 99.99% uptime available','Revenue share arrangements','LATA 721 direct termination','Direct carrier peering available'],
+   hot:false,cta:'Carrier Inquiry'}
+];
+
+function setPlan(t,el){
+  document.querySelectorAll('.ptb').forEach(b=>b.classList.remove('on'));el.classList.add('on');
+  document.getElementById('planGrid').innerHTML=(t==='retail'?retail:wholesale).map(p=>`
+    <div class="plan${p.hot?' hot':''}">
+      ${p.tag?`<div class="plan-tag">${p.tag}</div>`:''}
+      <div class="plan-tier">${p.tier}</div>
+      <div class="plan-name">${p.name}</div>
+      <p class="plan-desc">${p.desc}</p>
+      <div class="plan-price">${p.price?`<span class="plan-dollar">$</span><span class="plan-num"${p.price.length>4?' style="font-size:36px"':''}>${p.price}</span><span class="plan-per">${p.per}</span>`:`<span class="plan-num" style="font-size:34px">Custom</span>`}</div>
+      <div class="plan-note">${p.note}</div>
+      <div class="plan-compare">// ${p.compare}</div>
+      <div class="plan-line"></div>
+      <ul class="plan-features">${p.feats.map(f=>`<li>${f}</li>`).join('')}</ul>
+      <a href="#contact" class="plan-cta">${p.cta}</a>
+    </div>`).join('');
+}
+setPlan('retail',document.querySelector('.ptb.on'));
+
+function handleSubmit(btn){
+  const inputs=document.querySelectorAll('.finput,.fselect,.ftextarea');
+  let ok=true;
+  inputs.forEach(i=>{if(i.hasAttribute('placeholder')&&i.value.trim()===''&&i.closest('.fgroup').querySelector('.flabel')?.textContent.includes('*')){i.style.borderColor='rgba(255,100,100,.5)';ok=false;}else{i.style.borderColor='';}});
+  if(!ok){alert('Please fill in all required fields.');return;}
+  btn.textContent='Message Sent \u2713';
+  btn.style.background='linear-gradient(90deg,#1db87a,#38a8ff)';
+  btn.disabled=true;
+  setTimeout(()=>{btn.textContent='Send Message \u2192';btn.style.background='';btn.disabled=false;inputs.forEach(i=>i.style.borderColor='');},4000);
+}
+
+const secs=document.querySelectorAll('section[id]'),nls=document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll',()=>{let c='';secs.forEach(s=>{if(scrollY>=s.offsetTop-80)c=s.id;});nls.forEach(a=>{a.style.color=a.getAttribute('href')=='#'+c?'var(--sky2)':'';});});
+</script>
+</body>
+</html>

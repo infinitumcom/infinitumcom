@@ -1,0 +1,4 @@
+# www to non-www
+https://www.infinitumcom.com/* https://infinitumcom.com/:splat 301
+http://www.infinitumcom.com/* https://infinitumcom.com/:splat 301
+http://infinitumcom.com/* https://infinitumcom.com/:splat 301
